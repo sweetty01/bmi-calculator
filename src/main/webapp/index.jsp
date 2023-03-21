@@ -7,7 +7,7 @@
     <h1>BMI CALCULATOR</h1>
     <form action="bmi" method="post">
       <label>Height:</label>
-      <input type="text" name="height"><br><br>
+      <input type="text" name="height">
       <select name="heightUnit" id="height">
         <option value="cm">cm</option>
         <option value="foot">foot</option>
