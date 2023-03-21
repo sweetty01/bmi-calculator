@@ -18,7 +18,7 @@ public class bmi extends HttpServlet {
     if(heightUnit.equals("cm")){
       heightFactor=0.01;
     }
-    else if (heightUnit.equals("feet"))
+    else if (heightUnit.equals("foot"))
     {
       heightFactor =0.3048;
     }
@@ -34,7 +34,7 @@ public class bmi extends HttpServlet {
       weightFactor=0.453592;
     }
     else{
-      weightFactor=1;
+      weightFactor=1.0;
     }
     double bmi = (weight*weightFactor ) / (height * height*heightFactor*heightFactor);
 
