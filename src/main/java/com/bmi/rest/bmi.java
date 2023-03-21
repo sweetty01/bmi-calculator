@@ -15,14 +15,14 @@ public class bmi extends HttpServlet {
     String weightUnit = request.getParameter("weightUnit");
     double heightFactor=1.0;
     double weightFactor =1.0;
-    if(heightUnit == "cm"){
-      heightFactor=1/100;
+    if(heightUnit.equals("cm")){
+      heightFactor=0.01;
     }
-    else if (heightUnit== "feet")
+    else if (heightUnit.equals("feet"))
     {
       heightFactor =0.3048;
     }
-    else if (heightUnit=="inch")
+    else if (heightUnit.equals("inch"))
     {
       heightFactor =0.0254;
     }
@@ -30,15 +30,12 @@ public class bmi extends HttpServlet {
       heightFactor=1;
     }
 
-    if(weightUnit == "lbs"){
+    if(weightUnit.equals("lbs")){
       weightFactor=0.453592;
     }
     else{
       weightFactor=1;
     }
-
-
-
     double bmi = (weight*weightFactor ) / (height * height*heightFactor*heightFactor);
 
     response.setContentType("text/html");
