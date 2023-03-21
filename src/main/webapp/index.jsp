@@ -15,7 +15,7 @@
         <option value="metre">metre</option>
       </select><br>
       <label>Weight:</label>
-      <input type="number" name="weight">
+      <input type="text" name="weight">
       <select name="weightUnit" id="weight">
       <option value="kg">kg</option>
       <option value="lbs">lbs</option></select><br>
