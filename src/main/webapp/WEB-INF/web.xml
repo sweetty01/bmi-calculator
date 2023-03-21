@@ -5,12 +5,12 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-    <servlet-name>PercentageServlet</servlet-name>
-    <servlet-class>com.bmi.rest.PercentageServlet</servlet-class>
+    <servlet-name>bmi</servlet-name>
+    <servlet-class>com.bmi.rest.bmi</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>PercentageServlet</servlet-name>
-    <url-pattern>/percentage</url-pattern>
+    <servlet-name>bmi</servlet-name>
+    <url-pattern>/bmi</url-pattern>
   </servlet-mapping>
   
 </web-app>
