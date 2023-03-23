@@ -15,6 +15,7 @@ public class bmi extends HttpServlet {
     String weightUnit = request.getParameter("weightUnit");
     double heightFactor=1.0;
     double weightFactor =1.0;
+    String status = "";
     if(heightUnit.equals("cm")){
       heightFactor=0.01;
     }
@@ -38,7 +39,40 @@ public class bmi extends HttpServlet {
     }
     double bmi = (weight*weightFactor ) / (height * height*heightFactor*heightFactor);
 
-    response.setContentType("text/html");
-    response.getWriter().println("<html><body><h1>bmi " + bmi + "%</h1></body></html>");
+    if(bmi< 16)
+    {
+      status ="Severe Thinness";
+    }
+    else if(bmi>=16 && bmi<17 )
+    {
+      status="Moderate Thinness";
+    }
+    else if(bmi>=17 && bmi<18.5)
+    {
+      status="Mild Thinness";
+    }
+    else if(bmi>=18.5 && bmi<25 )
+    {
+      status="Normal";
+    }
+    else if(bmi>=25 && bmi<30)
+    {
+      status="Overweight";
+    }
+    else if(bmi>=30 && bmi<35 )
+    {
+      status="Obese Class I ";
+    }
+    else if(bmi>=35 && bmi<40)
+    {
+      status="Obese Class II";
+    }
+    else{
+      status ="Obese Class III";
+    }
+    request.setAttribute("message", bmi);
+    request.setAttribute("mess", status);
+    request.getRequestDispatcher("index.jsp").forward(request, response);
+    
+    }
   }
-}
