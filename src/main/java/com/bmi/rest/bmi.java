@@ -72,7 +72,7 @@ public class bmi extends HttpServlet {
     }
     request.setAttribute("message", bmi);
     request.setAttribute("mess", status);
-    request.getRequestDispatcher("index.jsp").forward(request, response);
+    request.getRequestDispatcher("result.jsp").forward(request, response);
     
     }
   }
