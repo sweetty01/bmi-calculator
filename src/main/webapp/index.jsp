@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,8 +23,10 @@
           <select class="mb-5" name="weightUnit" id="weight">
           <option value="kg">kg</option>
           <option value="lbs">lbs</option></select><br>
-          <input class="w-full bg-sky-400 rounded-xl text-white py-2" type="submit" value="Calculate BMI">
-
+          <input class="w-full bg-sky-400 rounded-xl text-white py-2" type="submit" value="Calculate BMI"
+          <form action="result.jsp" method="post">
+            <!-- your form inputs here -->
+          </form>
     </form>
     </div>
   </div>
