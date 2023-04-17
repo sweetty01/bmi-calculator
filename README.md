@@ -9,7 +9,7 @@ This is a simple BMI (Body Mass Index) Calculator web application implemented us
 ## Features
 - Users can input their weight and height in any of the given units to calculate their BMI.
 - The calculated BMI is displayed with a corresponding BMI category (e.g., Underweight, Normal, Overweight, etc.) according to the BMI classification.
-- Save the calculated BMI on a database.
+- Save the calculated BMI in a database.
 
 ## Getting Started
 
