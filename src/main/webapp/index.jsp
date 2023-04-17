@@ -21,12 +21,10 @@
           <label>Weight:</label>
           <input type="text" name="weight">
           <select class="mb-5" name="weightUnit" id="weight">
-          <option value="kg">kg</option>
-          <option value="lbs">lbs</option></select><br>
-          <input class="w-full bg-sky-400 rounded-xl text-white py-2" type="submit" value="Calculate BMI"
-          <form action="result.jsp" method="post">
-            <!-- your form inputs here -->
-          </form>
+            <option value="kg">kg</option>
+            <option value="lbs">lbs</option>
+          </select><br>
+          <input class="w-full bg-sky-400 rounded-xl text-white py-2" type="submit" value="Calculate BMI">
     </form>
     </div>
   </div>

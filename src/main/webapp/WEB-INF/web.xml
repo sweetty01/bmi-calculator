@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>bmi</servlet-name>
-    <servlet-class>com.bmi.rest.bmi</servlet-class>
+    <servlet-class>com.bmi.rest.BmiCalculator</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>bmi</servlet-name>
